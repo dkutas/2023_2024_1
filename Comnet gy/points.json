@@ -1,0 +1,16 @@
+{
+  "homework": {
+    "max": 4,
+    "point": 2,
+    "min_percent": 0.5
+  },
+  "zh": {
+    "max": 10,
+    "min_percent": 0.5
+  },
+  "mininet": {
+    "max": 100,
+    "point": 76,
+    "min_percent": 0.5
+  }
+}
