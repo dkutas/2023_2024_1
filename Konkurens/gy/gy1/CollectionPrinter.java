@@ -1,4 +1,4 @@
-package Konkurens;
+package Konkurens.gy.gy1;
 
 import java.util.ArrayList;
 import java.util.Arrays;

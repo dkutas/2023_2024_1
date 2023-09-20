@@ -1,4 +1,4 @@
-package Konkurens;
+package Konkurens.gy.gy1;
 
 public class Triple<T, U, V> {
     private T first;
