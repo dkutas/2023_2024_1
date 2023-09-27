@@ -1,34 +1,3 @@
-article,
-aside,
-audio,
-canvas,
-command,
-datalist,
-details,
-embed,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-keygen,
-meter,
-nav,
-output,
-progress,
-section,
-source,
-video {
-  display: block;
-}
-mark,
-rp,
-rt,
-ruby,
-summary,
-time {
-  display: inline;
-}
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 160%;
@@ -254,68 +223,6 @@ h4 a:hover {
   padding-top: 18px;
   padding-bottom: 18px;
 }
-#content .inside .form-description {
-  display: flex;
-  flex-direction: row;
-}
-
-#content .inside .form-description .form-text {
-  text-align: center;
-  margin-right: 25px;
-}
-.form-description iframe {
-  min-width: 900px;
-  min-height: 450px;
-  flex-wrap: nowrap;
-}
-
-#form {
-  clear: right;
-  display: grid;
-  grid-template-rows: 4fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  margin-top: 20px;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  overflow: hidden;
-}
-#form fieldset {
-  align-self: center;
-  justify-self: center;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  float: left;
-}
-fieldset .field {
-  display: flex;
-  gap: 30px;
-}
-#form fieldset .radio-fields {
-  display: flex;
-}
-#form fieldset .radio-fields input {
-  transform: scale(0.2);
-}
-#form fieldset .checkbox-fields {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-fieldset .radio-fields label {
-  font-weight: 100;
-  align-self: center;
-}
-fieldset label {
-  font-size: medium;
-  align-self: center;
-}
-fieldset input[type="checkbox"] {
-  align-self: center;
-  transform: scale(0.2);
-}
 
 .png.grif {
   border: 0.3em solid #9b0a06;
@@ -330,36 +237,6 @@ fieldset input[type="checkbox"] {
   border: 0.3em solid #2b5f29;
 }
 
-#form .field {
-  clear: both;
-  height: 30px;
-}
-#form label {
-  float: left;
-  width: 123px;
-  font-weight: bold;
-}
-#form input {
-  width: 133px;
-  padding: 2px 0 2px 3px;
-  border: 1px solid #d1d1d1;
-  align-self: normal;
-  justify-self: center;
-  color: #70635b;
-}
-#form input.button {
-  top: 50%;
-  left: 50%;
-  margin-bottom: 12px;
-}
-#form textarea {
-  width: 503px;
-  height: 80px;
-  padding: 2px 0 2px 3px;
-  border: 1px solid #d1d1d1;
-  color: #70635b;
-  overflow: hidden;
-}
 footer {
   display: block;
   padding: 1em;
@@ -381,13 +258,13 @@ a {
 .fl-table {
   border-radius: 5px;
   font-size: 0.875em;
-  font-weight: bold;
-  border: none;
   border-collapse: collapse;
+  border: none;
   width: 100%;
   max-width: 100%;
   white-space: nowrap;
   background-color: white;
+  font-weight: bold;
 }
 
 .fl-table td,
@@ -499,8 +376,11 @@ ul {
   list-style: none;
 }
 
+caption:hover {
+  cursor: pointer;
+}
+
 details {
-  border: 1px solid #aaa;
   border-radius: 4px;
   padding: 0.5em 0.5em 0;
 }
