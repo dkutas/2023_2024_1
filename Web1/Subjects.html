@@ -4,13 +4,12 @@
     <title>Hogwarts | Subjects</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
   <body id="page3">
     <!-- START PAGE SOURCE -->
@@ -20,14 +19,14 @@
           <div id="includeNavbar"></div>
         </aside>
         <section id="content">
-          <a id="banner-link" href="./index.html">
-            <div id="banner">
-              <h2>Hogwarts <span>Subjects</span></h2>
-            </div>
-          </a>
+          <div id="banner">
+            <a id="banner-link" href="./index.html">
+              <h1>Hogwarts <span> Subjects </span></h1>
+            </a>
+          </div>
           <div class="inside">
-            <div class="table-responsive">
-              <table class="table table-light">
+            <div>
+              <table class="table">
                 <caption>
                   <details>
                     <summary>Subjects</summary>
@@ -89,7 +88,7 @@
               </table>
             </div>
 
-            <div class="gridWrapper">
+            <div>
               <div id="Astronomy">
                 <h2>Astronomy</h2>
                 Astronomy is a core class and subject taught at Hogwarts School
@@ -126,6 +125,11 @@
                 Dark Arts is a required subject from first year to fifth year.
                 The curriculum of the class varies greatly depending on what the
                 professor at the time deems appropriate.
+                <div class="videoWrapper">
+                  <video width="80%" poster="./images/dada.jpg" controls>
+                    <source src="./videos/DADA.mp4" type="video/mp4" />
+                  </video>
+                </div>
               </div>
               <div id="Flying">
                 <h2>Flying</h2>
@@ -140,6 +144,11 @@
                 progressively work on various techniques and maneuvers performed
                 while in flight, as well as receiving proper instructions on the
                 subject of proper broom care and maintenance.
+                <div class="videoWrapper">
+                  <video width="80%" poster="images/fyling.jpg" controls>
+                    <source src="./videos/Flying.mp4" type="video/mp4" />
+                  </video>
+                </div>
               </div>
               <div id="Herbology">
                 <h2>Herbology</h2>
@@ -155,6 +164,11 @@
                 learning about the different varieties of magical plants that
                 exist. The further into a student's education, the more
                 difficult and dangerous the plants become.
+                <div class="videoWrapper">
+                  <video width="80%" poster="./images/herbology.jpg" controls>
+                    <source src="./videos/Herbology.mp4" type="video/mp4" />
+                  </video>
+                </div>
               </div>
               <div id="HoM">
                 <h2>History of Magic</h2>
@@ -177,6 +191,11 @@
                 found in books, the intricacies of timing, ageing, stirring
                 techniques, and bottling are more difficult to learn without the
                 guidance of experienced masters.
+                <div class="videoWrapper">
+                  <video width="80%" poster="./images/Potions.jpg" controls>
+                    <source src="./videos/Potions.mp4" type="video/mp4" />
+                  </video>
+                </div>
               </div>
               <div id="Transfiguration">
                 <h2>Transfiguration</h2>
