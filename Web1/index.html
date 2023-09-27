@@ -4,9 +4,7 @@
     <title>Hogwarts | About Us</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -20,14 +18,15 @@
           <div id="includeNavbar"></div>
         </aside>
         <section id="content">
-          <a id="banner-link" href="#">
-            <div id="banner">
-              <h1>
-                Welcome!
-                <span>to Hogwarts School for Witchcraft and Wizardry!</span>
-              </h1>
-            </div>
-          </a>
+          <div id="banner">
+            <h1>
+              Welcome!
+              <br />
+              to Hogwarts School
+              <br />
+              for Witchcraft and Wizardry!
+            </h1>
+          </div>
           <div class="inside">
             <h2>About the <span>School</span></h2>
             <p>
@@ -109,8 +108,8 @@
   </body>
   <script>
     $(function () {
-      $("#includeFooter").load("./Footer.html");
-      $("#includeNavbar").load("./Navbar.html");
+      $("#includeFooter").load("./components/Footer.html");
+      $("#includeNavbar").load("./components/Navbar.html");
     });
   </script>
 </html>

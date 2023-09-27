@@ -4,8 +4,8 @@
     <title>Hogwarts | Subjects</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -20,73 +20,69 @@
         </aside>
         <section id="content">
           <div id="banner">
-            <a id="banner-link" href="./index.html">
-              <h1>Hogwarts <span> Subjects </span></h1>
-            </a>
+            <h1>Subjects</h1>
           </div>
           <div class="inside">
-            <div>
-              <table class="table">
-                <caption>
-                  <details>
-                    <summary>Subjects</summary>
-                    These are all of the subjects a student can take in
-                    Hogwarts. Some of them are mandatory, some of them optional.
-                  </details>
-                </caption>
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Class</th>
-                    <th scope="col">Professor</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>
-                      <a href="#Astronomy"> Astronomy </a>
-                    </td>
-                    <td>Aurora Sinistra</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td><a href="#Charms">Charms</a></td>
-                    <td>Filius Flitwick</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td><a href="#DADA">Defense Against the Dark Arts</a></td>
-                    <td>Severus Snape</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td><a href="#Flying">Flying</a></td>
-                    <td>Rolanda Hooch</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td><a href="#Herbology">Herbology</a></td>
-                    <td>Pomona Sprout</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">6</th>
-                    <td><a href="#HoM">History of Magic</a></td>
-                    <td>Cutdbert Binns</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">7</th>
-                    <td><a href="#Potions">Potions</a></td>
-                    <td>Horace Slughorn</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">8</th>
-                    <td><a href="#Transfiguration">Transfiguration</a></td>
-                    <td>Minerva McGonagall</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <table class="table table-dark">
+              <caption>
+                <details>
+                  <summary>Subjects</summary>
+                  These are all of the subjects a student can take in Hogwarts.
+                  Some of them are mandatory, some of them optional.
+                </details>
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Class</th>
+                  <th scope="col">Professor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>
+                    <a href="#Astronomy"> Astronomy </a>
+                  </td>
+                  <td>Aurora Sinistra</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td><a href="#Charms">Charms</a></td>
+                  <td>Filius Flitwick</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td><a href="#DADA">Defense Against the Dark Arts</a></td>
+                  <td>Severus Snape</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td><a href="#Flying">Flying</a></td>
+                  <td>Rolanda Hooch</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td><a href="#Herbology">Herbology</a></td>
+                  <td>Pomona Sprout</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td><a href="#HoM">History of Magic</a></td>
+                  <td>Cutdbert Binns</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td><a href="#Potions">Potions</a></td>
+                  <td>Horace Slughorn</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td><a href="#Transfiguration">Transfiguration</a></td>
+                  <td>Minerva McGonagall</td>
+                </tr>
+              </tbody>
+            </table>
 
             <div>
               <div id="Astronomy">
@@ -223,8 +219,8 @@
   </body>
   <script>
     $(function () {
-      $("#includeFooter").load("./Footer.html");
-      $("#includeNavbar").load("./Navbar.html");
+      $("#includeFooter").load("./components/Footer.html");
+      $("#includeNavbar").load("./components/Navbar.html");
     });
   </script>
 </html>

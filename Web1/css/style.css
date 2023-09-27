@@ -15,6 +15,7 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   min-width: 940px;
 }
+
 .container {
   display: flex;
   margin: 20px;
@@ -30,7 +31,7 @@ section#content {
 aside {
   width: 20%;
   margin-right: 30px;
-  padding: 5px 0 0 0;
+  padding: 0 0 0 0;
 }
 input,
 select,
@@ -47,12 +48,12 @@ fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 37px;
+  padding-left: 0;
+  margin-top: 20px;
 }
 .navbar li {
   font-weight: bold;
   font-size: 0.857em;
-  padding-bottom: 8px;
   margin-bottom: 6px;
 }
 
@@ -212,15 +213,8 @@ video {
   padding-bottom: 2em;
 }
 
-a {
-  outline: none;
-}
-
-.ext-links a {
+a #extLink {
   text-decoration: none;
-}
-.ext-links img {
-  height: 60px;
 }
 
 .extra-wrap {
@@ -228,6 +222,7 @@ a {
 }
 ul {
   list-style: none;
+  margin-top: 12.25px;
 }
 
 caption:hover {
@@ -251,4 +246,8 @@ details[open] {
 details[open] summary {
   border-bottom: 1px solid #aaa;
   margin-bottom: 0.5em;
+}
+
+.extLink {
+  text-decoration: none;
 }
