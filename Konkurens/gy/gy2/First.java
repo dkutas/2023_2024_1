@@ -10,11 +10,11 @@ public class First {
                 System.out.print(i + "," + -i + ", ");
             }
         };
-        // try {
-        // firstThread.join();
-        // } catch (InterruptedException e) {
-        // e.printStackTrace();
-        // }
+        try {
+            firstThread.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         new Thread(task).start();
 
