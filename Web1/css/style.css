@@ -91,6 +91,7 @@ fieldset {
 p {
   margin-bottom: 16px;
   line-height: 1.429em;
+  text-align: justify;
 }
 #banner {
   display: flex;
@@ -210,6 +211,9 @@ footer {
   background-color: burlywood;
   text-align: center;
 }
+footer p {
+  text-align: center;
+}
 
 div.videoWrapper {
   display: flex;
@@ -287,4 +291,7 @@ div.margined {
   #side {
     display: none;
   }
+}
+textarea {
+  resize: vertical;
 }

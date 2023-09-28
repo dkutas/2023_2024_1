@@ -37,7 +37,10 @@
             </div>
             <div class="col">
               <figure>
-                <img src="images/logo4banner.svg" />
+                <img
+                  alt="Icon which shows Hogwarts' logo"
+                  src="images/logo4banner.svg"
+                />
               </figure>
             </div>
           </div>
@@ -59,18 +62,25 @@
               </div>
             </div>
 
-            <form id="form" action="#">
+            <form
+              id="form"
+              action="mailto:emailid@example.com"
+              method="post"
+              enctype="text/plain"
+            >
               <fieldset>
                 <div class="form-group row">
                   <label class="col-sm-2 col-form-label">Parent's name:</label>
-                  <div class="col-sm-10">
+                  <div id="pName" class="col-sm-10">
                     <input
+                      name="Parent's first name"
                       class="form-control margined"
                       type="text"
                       maxlength="10"
                       placeholder="First Name"
                     />
                     <input
+                      name="Parent's last name"
                       class="form-control margined"
                       type="text"
                       maxlength="10"
@@ -80,14 +90,16 @@
                 </div>
                 <div class="form-group row">
                   <label class="col-sm-2 col-form-label">Child's name:</label>
-                  <div class="col-sm-10">
+                  <div id="cName" class="col-sm-10">
                     <input
+                      name="Child's first name"
                       class="form-control margined"
                       type="text"
                       maxlength="10"
                       placeholder="First Name"
                     />
                     <input
+                      name="Child's last name"
                       class="form-control margined"
                       type="text"
                       maxlength="10"
@@ -99,7 +111,8 @@
                 <div class="form-group">
                   <label>Your Message:</label>
                   <textarea
-                    class="form-control"
+                    name="Comment"
+                    class="form-control fixedWidth"
                     maxlength="90"
                     cols="1"
                     rows="2"
@@ -114,7 +127,7 @@
                         type="radio"
                         id="cannot"
                         value="My child can't go to Hogsmeade."
-                        name="radio"
+                        name="Decision"
                       />
                       <label for="cannot" class="form-check-label"
                         >My child can't go to Hogsmeade.</label
@@ -123,7 +136,7 @@
                     <div class="margined">
                       <input
                         class="form-check-input"
-                        name="radio"
+                        name="Decision"
                         type="radio"
                         id="notalone"
                         value="My child can go to Hogsmeade with at least one pupil partner."
@@ -136,7 +149,7 @@
                     <div>
                       <input
                         class="form-check-input"
-                        name="radio"
+                        name="Decision"
                         type="radio"
                         id="alone"
                         value="My child can go to Hogsmeade alone."
@@ -151,7 +164,11 @@
                   <div class="checkbox-fields">
                     <div class="col-sm-10">
                       <div class="form-check">
-                        <input id="termsandcond" type="checkbox" value="" />
+                        <input
+                          id="termsandcond"
+                          type="checkbox"
+                          name="Terms and conditions"
+                        />
                         <label for="termsandcond"
                           >I understand and agree with the given terms and
                           conditions.</label
@@ -161,8 +178,7 @@
                         <input
                           type="checkbox"
                           id="wholeyear"
-                          name="wholeyear"
-                          value=""
+                          name="For the whole year?"
                         />
                         <label for="wholeyear"
                           >I declare the upper decision for every year my child
@@ -173,13 +189,8 @@
                   </div>
                 </div>
               </fieldset>
-              <input
-                class="button"
-                type="submit"
-                value="Submit"
-                onclick="msg('submitted')"
-              />
-              <input class="button" type="reset" onclick="msg('reset')" />
+              <input class="button" type="submit" value="Submit" />
+              <input class="button" type="reset" />
             </form>
           </div>
         </section>
