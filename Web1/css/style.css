@@ -10,12 +10,12 @@ body {
 }
 html {
   font-family: Arial, Helvetica, sans-serif;
-  min-width: 940px;
+  min-width: 58.75em;
 }
 
 .container {
   display: flex;
-  margin: 20px;
+  margin: 1.25em;
   width: auto;
   overflow: hidden;
   font-size: 0.875em;
@@ -27,7 +27,7 @@ section#content {
 }
 aside {
   width: 20%;
-  margin-right: 30px;
+  margin-right: 1.875em;
   padding: 0 0 0 0;
 }
 input,
@@ -46,16 +46,20 @@ fieldset {
   flex-direction: column;
   align-items: center;
   padding-left: 0;
-  margin-top: 20px;
+  margin-top: 1.25em;
 }
 .navbar li {
   font-weight: bold;
   font-size: 0.857em;
-  margin-bottom: 6px;
+  margin-bottom: 0.75em;
 }
-
 .navbar li a {
   text-decoration: none;
+}
+
+.navbar span {
+  font-family: "Harry Potter", sans-serif;
+  font-size: large;
 }
 
 .subjects li {
@@ -74,7 +78,6 @@ fieldset {
 .img-box {
   overflow: hidden;
   padding-bottom: 20px;
-  backdrop-filter: blur(10px);
 }
 .img-box img {
   float: left;
@@ -92,27 +95,34 @@ p {
 #banner {
   display: flex;
   flex-direction: row;
-  min-height: 300px;
+  justify-items: center;
+  align-items: center;
   background: url(../images/bannerBg.png) no-repeat left top;
   background-position: right;
+  border-radius: 1em;
 }
+#banner {
+  height: 17.285125em;
+  width: 100%;
+}
+.col {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
 #banner h1 {
   font-size: 2em;
   font-weight: bold;
-  padding: 75px 0 0 55px;
+  padding: 0 0 0 55px;
   text-transform: uppercase;
-}
-#banner h1 span {
-  display: block;
-}
-#banner h1 span a {
-  text-decoration: none;
+  font-family: "Harry Potter", sans-serif;
 }
 #banner img {
-  height: 80%;
-  width: auto;
-  justify-self: center;
-  align-self: center;
+  height: auto;
+  width: 22em;
   padding: 2em 2em 2em 2em;
 }
 
@@ -146,7 +156,7 @@ h2 {
   margin-bottom: 20px;
 }
 h2 span {
-  color: #8d8d8d;
+  color: #696464;
 }
 h2 span.grif {
   color: #9b0a06;
@@ -167,6 +177,7 @@ h2 span.slyth {
 }
 #content .inside {
   padding: 20px 20px 20px;
+  backdrop-filter: blur(10px);
 }
 #content .inside p {
   width: 100%;
@@ -174,6 +185,10 @@ h2 span.slyth {
   line-height: 1.429em;
   padding-top: 18px;
   padding-bottom: 18px;
+  font-size: 1.3em;
+}
+#content .inside h2 {
+  font-family: "Harry Potter", sans-serif;
 }
 
 .png.grif {
@@ -206,8 +221,15 @@ video {
   width: 80%;
   height: auto;
 }
-
-a #extLink {
+.extLinks {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+.extLink {
   text-decoration: none;
 }
 
@@ -220,14 +242,14 @@ caption:hover {
   cursor: pointer;
 }
 
-details {
-  border-radius: 4px;
+caption details {
   padding: 0.5em 0.5em 0;
 }
 
 summary {
   font-weight: bold;
   padding: 0.5em;
+  font-size: medium;
 }
 
 details[open] {
@@ -241,4 +263,19 @@ details[open] summary {
 
 .extLink {
   text-decoration: none;
+}
+
+th {
+  font-weight: 900;
+}
+td {
+  font-weight: 700;
+}
+
+input.margined {
+  margin: 0.5em 0 0.5em 0;
+}
+
+div.margined {
+  margin: 0.5em 0 0.5em 0;
 }

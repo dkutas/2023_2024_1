@@ -17,6 +17,7 @@
         $("#includeNavbar").load("./components/Navbar.html");
       });
     </script>
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet" />
   </head>
   <body id="page4">
     <main>
@@ -27,17 +28,24 @@
         </aside>
         <section id="content">
           <div id="banner">
-            <h1>
-              Hogsmeade visit
-              <br />
-              permission form
-            </h1>
+            <div class="col">
+              <h1>
+                Hogsmeade visit
+                <br />
+                permission form
+              </h1>
+            </div>
+            <div class="col">
+              <figure>
+                <img src="images/logo4banner.svg" />
+              </figure>
+            </div>
           </div>
 
           <div class="inside">
-            <div class="form-description">
-              <div class="form-text">
-                <h1>Form <span>description</span></h1>
+            <div>
+              <div>
+                <h2>About <span> Hogsmeade </span></h2>
                 <p>
                   Not so far from the school is located Hogsmeade, a little town
                   where the students who are at least 14 years old can go in
@@ -57,13 +65,13 @@
                   <label class="col-sm-2 col-form-label">Parent's name:</label>
                   <div class="col-sm-10">
                     <input
-                      class="form-control"
+                      class="form-control margined"
                       type="text"
                       maxlength="10"
                       placeholder="First Name"
                     />
                     <input
-                      class="form-control"
+                      class="form-control margined"
                       type="text"
                       maxlength="10"
                       placeholder="Last Name"
@@ -74,13 +82,13 @@
                   <label class="col-sm-2 col-form-label">Child's name:</label>
                   <div class="col-sm-10">
                     <input
-                      class="form-control"
+                      class="form-control margined"
                       type="text"
                       maxlength="10"
                       placeholder="First Name"
                     />
                     <input
-                      class="form-control"
+                      class="form-control margined"
                       type="text"
                       maxlength="10"
                       placeholder="Last Name"
@@ -99,7 +107,7 @@
                   ></textarea>
                 </div>
                 <div class="row">
-                  <div class="col-sm-10">
+                  <div class="col-sm-10 margined">
                     <div>
                       <input
                         class="form-check-input"
@@ -112,7 +120,7 @@
                         >My child can't go to Hogsmeade.</label
                       >
                     </div>
-                    <div>
+                    <div class="margined">
                       <input
                         class="form-check-input"
                         name="radio"
