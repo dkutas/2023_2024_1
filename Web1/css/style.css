@@ -1,15 +1,9 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 160%;
-  line-height: 1em;
-  /* color: #454545; */
-  min-width: 100%;
   background: url(../images/bg.jpg) no-repeat center center fixed;
   background-size: cover;
-  position: absolute;
 }
 html {
-  font-family: Arial, Helvetica, sans-serif;
   min-width: 58.75em;
 }
 
@@ -22,7 +16,6 @@ html {
   padding-bottom: 11em;
 }
 section#content {
-  float: left;
   width: 80%;
 }
 aside {
@@ -62,19 +55,6 @@ fieldset {
   font-size: large;
 }
 
-.subjects li {
-  width: 100%;
-  overflow: hidden;
-  vertical-align: top;
-  line-height: 1.429em;
-  padding-top: 18px;
-}
-.subjects li img {
-  float: left;
-  margin-right: 22px;
-  height: auto;
-  width: auto;
-}
 .img-box {
   overflow: hidden;
   padding-bottom: 20px;
