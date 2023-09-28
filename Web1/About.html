@@ -10,6 +10,12 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#includeFooter").load("./components/Footer.html");
+        $("#includeNavbar").load("./components/Navbar.html");
+      });
+    </script>
   </head>
   <body id="page1">
     <!-- START PAGE SOURCE -->
@@ -27,6 +33,9 @@
               <br />
               for Witchcraft and Wizardry!
             </h1>
+            <figure>
+              <img src="images/logo4banner.svg" />
+            </figure>
           </div>
           <div class="inside">
             <h2>About the <span>School</span></h2>
@@ -107,10 +116,4 @@
       <div id="includeFooter"></div>
     </footer>
   </body>
-  <script>
-    $(function () {
-      $("#includeFooter").load("./components/Footer.html");
-      $("#includeNavbar").load("./components/Navbar.html");
-    });
-  </script>
 </html>

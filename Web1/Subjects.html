@@ -10,6 +10,12 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
+    <script>
+      $(function () {
+        $("#includeFooter").load("./components/Footer.html");
+        $("#includeNavbar").load("./components/Navbar.html");
+      });
+    </script>
   </head>
   <body id="page3">
     <!-- START PAGE SOURCE -->
@@ -122,7 +128,7 @@
                 The curriculum of the class varies greatly depending on what the
                 professor at the time deems appropriate.
                 <div class="videoWrapper">
-                  <video width="80%" poster="./images/dada.jpg" controls>
+                  <video poster="./images/dada.jpg" controls>
                     <source src="./videos/DADA.mp4" type="video/mp4" />
                   </video>
                 </div>
@@ -141,7 +147,7 @@
                 while in flight, as well as receiving proper instructions on the
                 subject of proper broom care and maintenance.
                 <div class="videoWrapper">
-                  <video width="80%" poster="images/fyling.jpg" controls>
+                  <video poster="images/fyling.jpg" controls>
                     <source src="./videos/Flying.mp4" type="video/mp4" />
                   </video>
                 </div>
@@ -161,7 +167,7 @@
                 exist. The further into a student's education, the more
                 difficult and dangerous the plants become.
                 <div class="videoWrapper">
-                  <video width="80%" poster="./images/herbology.jpg" controls>
+                  <video poster="./images/herbology.jpg" controls>
                     <source src="./videos/Herbology.mp4" type="video/mp4" />
                   </video>
                 </div>
@@ -188,7 +194,7 @@
                 techniques, and bottling are more difficult to learn without the
                 guidance of experienced masters.
                 <div class="videoWrapper">
-                  <video width="80%" poster="./images/Potions.jpg" controls>
+                  <video poster="./images/Potions.jpg" controls>
                     <source src="./videos/Potions.mp4" type="video/mp4" />
                   </video>
                 </div>
@@ -217,10 +223,4 @@
     </footer>
     <!-- END PAGE SOURCE -->
   </body>
-  <script>
-    $(function () {
-      $("#includeFooter").load("./components/Footer.html");
-      $("#includeNavbar").load("./components/Navbar.html");
-    });
-  </script>
 </html>

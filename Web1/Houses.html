@@ -11,6 +11,12 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      $(function () {
+        $("#includeFooter").load("./components/Footer.html");
+        $("#includeNavbar").load("./components/Navbar.html");
+      });
+    </script>
   </head>
   <body id="page2">
     <main>
@@ -27,7 +33,7 @@
             <div class="img-box">
               <figure>
                 <a
-                  href="images/Gryffindor (Medium).jpg"
+                  href="images/Gryffindor_md.jpg"
                   title="Bigger version of Gryffindor logo."
                 >
                   <img
@@ -48,7 +54,7 @@
             <div class="img-box">
               <figure>
                 <a
-                  href="images/HufflePuff (Medium).jpg"
+                  href="images/HufflePuff_md.jpg"
                   title="Bigger version of HufflePuff logo."
                 >
                   <img
@@ -70,7 +76,7 @@
             <div class="img-box">
               <figure>
                 <a
-                  href="images/Ravenclaw (Medium).jpg"
+                  href="images/Ravenclaw_md.jpg"
                   title="Bigger version of Ravenclaw logo."
                 >
                   <img
@@ -92,7 +98,7 @@
             <div class="img-box">
               <figure>
                 <a
-                  href="images/Slytherin (Medium).jpg"
+                  href="images/Slytherin_md.jpg"
                   title="Bigger version of Slytherin logo."
                 >
                   <img
@@ -117,10 +123,4 @@
       <div id="includeFooter"></div>
     </footer>
   </body>
-  <script>
-    $(function () {
-      $("#includeFooter").load("./components/Footer.html");
-      $("#includeNavbar").load("./components/Navbar.html");
-    });
-  </script>
 </html>

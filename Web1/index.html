@@ -9,6 +9,12 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
+    <script>
+      $(function () {
+        $("#includeFooter").load("./components/Footer.html");
+        $("#includeNavbar").load("./components/Navbar.html");
+      });
+    </script>
   </head>
   <body id="page1">
     <main>
@@ -106,10 +112,4 @@
       <div id="includeFooter"></div>
     </footer>
   </body>
-  <script>
-    $(function () {
-      $("#includeFooter").load("./components/Footer.html");
-      $("#includeNavbar").load("./components/Navbar.html");
-    });
-  </script>
 </html>

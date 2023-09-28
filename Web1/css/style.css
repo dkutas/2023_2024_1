@@ -4,10 +4,7 @@ body {
   line-height: 1em;
   /* color: #454545; */
   min-width: 100%;
-  background: url(../images/324663-P9MYAD-576.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background: url(../images/bg.jpg) no-repeat center center fixed;
   background-size: cover;
   position: absolute;
 }
@@ -93,19 +90,30 @@ p {
   line-height: 1.429em;
 }
 #banner {
+  display: flex;
+  flex-direction: row;
   min-height: 300px;
-  background: url(../images/download_resized.png) no-repeat left top;
+  background: url(../images/bannerBg.png) no-repeat left top;
   background-position: right;
 }
 #banner h1 {
-  font-size: 1.8em;
+  font-size: 2em;
+  font-weight: bold;
   padding: 75px 0 0 55px;
+  text-transform: uppercase;
 }
 #banner h1 span {
   display: block;
 }
 #banner h1 span a {
   text-decoration: none;
+}
+#banner img {
+  height: 80%;
+  width: auto;
+  justify-self: center;
+  align-self: center;
+  padding: 2em 2em 2em 2em;
 }
 
 a {
@@ -152,22 +160,6 @@ h2 span.ravenc {
 h2 span.slyth {
   color: #2b5f29;
 }
-h3 {
-  font-size: 1.25em;
-  line-height: 1.2em;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-}
-h4 {
-  font-size: 1em;
-  margin-bottom: 5px;
-}
-h4 a {
-  text-decoration: none;
-}
-h4 a:hover {
-  color: #ff7b01;
-}
 .link {
   position: absolute;
   right: 0;
@@ -211,15 +203,14 @@ div.videoWrapper {
 video {
   padding-top: 2em;
   padding-bottom: 2em;
+  width: 80%;
+  height: auto;
 }
 
 a #extLink {
   text-decoration: none;
 }
 
-.extra-wrap {
-  zoom: 1;
-}
 ul {
   list-style: none;
   margin-top: 12.25px;
