@@ -97,7 +97,7 @@ p {
   flex-direction: row;
   justify-items: center;
   align-items: center;
-  background: url(../images/bannerBg.png) no-repeat left top;
+  background: url(../images/bannerBg.png) no-repeat left top !important;
   background-position: right;
   border-radius: 1em;
 }
@@ -278,4 +278,13 @@ input.margined {
 
 div.margined {
   margin: 0.5em 0 0.5em 0;
+}
+
+@media print {
+  #includeFooter {
+    display: none;
+  }
+  #side {
+    display: none;
+  }
 }
