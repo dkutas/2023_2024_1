@@ -46,7 +46,7 @@
             </div>
           </div>
 
-          <div class="inside">
+          <div id="mainContent" class="inside">
             <div>
               <div>
                 <h2>About <span> Hogsmeade </span></h2>
@@ -71,9 +71,12 @@
             >
               <fieldset>
                 <div class="form-group row">
-                  <label class="col-sm-2 col-form-label">Parent's name:</label>
+                  <label for="pNameFirst" class="col-sm-2 col-form-label"
+                    >Parent's name:</label
+                  >
                   <div id="pName" class="col-sm-10">
                     <input
+                      id="pNameFirst"
                       name="Parent's first name"
                       class="form-control margined"
                       type="text"
@@ -90,10 +93,13 @@
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label class="col-sm-2 col-form-label">Child's name:</label>
+                  <label for="cNameFirst" class="col-sm-2 col-form-label"
+                    >Child's name:</label
+                  >
                   <div id="cName" class="col-sm-10">
                     <input
-                      name="Child's first name"
+                      id="cNameFirst"
+                      name="'Childs first name"
                       class="form-control margined"
                       type="text"
                       maxlength="10"
@@ -114,7 +120,7 @@
                   <textarea
                     name="Comment"
                     class="form-control fixedWidth"
-                    maxlength="90"
+                    maxlength="1000"
                     cols="1"
                     rows="2"
                     placeholder="Comments"
@@ -191,7 +197,7 @@
                 </div>
               </fieldset>
               <input class="button" type="submit" value="Submit" />
-              <input class="button" type="reset" />
+              <input class="button" type="reset" value="Reset" />
             </form>
           </div>
         </section>

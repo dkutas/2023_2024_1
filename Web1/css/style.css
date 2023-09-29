@@ -6,7 +6,6 @@ body {
 html {
   min-width: 58.75em;
 }
-
 .container {
   display: flex;
   margin: 1.25em;
@@ -126,9 +125,6 @@ a#link-form {
 a.actual {
   color: #70635b;
 }
-a:hover {
-  text-decoration: none;
-}
 
 h2 {
   font-size: 1.5em;
@@ -143,7 +139,7 @@ h2 span.grif {
   color: #9b0a06;
 }
 h2 span.huffle {
-  color: #be9c08;
+  color: #8d7404;
 }
 h2 span.ravenc {
   color: #047da6;
@@ -205,6 +201,11 @@ video {
   width: 80%;
   height: auto;
 }
+iframe {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 80%;
+}
 .extLinks {
   align-items: center;
   display: flex;
@@ -230,18 +231,24 @@ caption details {
   padding: 0.5em 0.5em 0;
 }
 
+li.sizechange:hover {
+  cursor: pointer;
+}
+
 summary {
   font-weight: bold;
   padding: 0.5em;
   font-size: medium;
+  color: black;
 }
 
 details[open] {
   padding: 0.5em;
+  color: black;
 }
 
 details[open] summary {
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #000000;
   margin-bottom: 0.5em;
 }
 
@@ -274,4 +281,14 @@ div.margined {
 }
 textarea {
   resize: vertical;
+}
+
+#navbar li#jumpToContent {
+  position: absolute;
+  left: -9999px;
+}
+
+#navbar li#jumpToContent a:focus {
+  position: static;
+  background-color: white;
 }
