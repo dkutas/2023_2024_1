@@ -1,5 +1,10 @@
 <nav>
   <ul class="navbar">
+    <script>
+      document
+        .getElementById("#sizechange2")
+        .style.setProperty("display", "none");
+    </script>
     <li>
       <span><a id="link-about" href="./About.html">Home</a></span>
     </li>
@@ -15,22 +20,28 @@
     <br />
     <li id="jumpToContent">
       <span>
-        <a href="#mainContent"> Go to content</a>
+        <a href="#mainContent">Go to content</a>
       </span>
     </li>
     <li id="#sizechange1" class="sizechange">
-      <span>
-        <div
-          onclick="document.getElementsByTagName('body')[0].style.fontSize = '18px'"
+      <div>
+        <span
+          onclick="document.body.style.fontSize = '20px'
+          document.getElementById('#sizechange1').style.setProperty('display', 'none');
+          document.getElementById('#sizechange2').style.setProperty('display', 'block');
+          "
         >
           Bigger size
-        </div>
-      </span>
+        </span>
+      </div>
     </li>
     <li id="#sizechange2" class="sizechange">
       <span>
         <div
-          onclick="document.getElementsByTagName('body')[0].style.fontSize = '14px'"
+          onclick="document.body.style.fontSize = '14px'
+      document.getElementById('#sizechange2').style.setProperty('display', 'none');
+      document.getElementById('#sizechange1').style.setProperty('display', 'block');   
+        "
         >
           Normal size
         </div>
