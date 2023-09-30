@@ -197,6 +197,7 @@ div.videoWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
 }
 video {
   padding-top: 2em;
@@ -204,11 +205,17 @@ video {
   width: 80%;
   height: auto;
 }
+
 iframe.aspect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   padding-top: 2em;
-  width: auto;
   padding-bottom: 2em;
-  height: auto;
+  width: 80%;
+  height: 100%;
   aspect-ratio: 800/533;
 }
 .extLinks {
