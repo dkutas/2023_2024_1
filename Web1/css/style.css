@@ -315,6 +315,16 @@ textarea {
   resize: vertical;
 }
 
+a#skipTo {
+  position: absolute;
+  left: -9999px;
+}
+
+a#skipTo:focus {
+  position: static;
+  background-color: white;
+}
+
 #navbar ul li#jumpToContent a {
   position: absolute;
   left: -9999px;
