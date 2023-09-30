@@ -315,12 +315,13 @@ textarea {
   resize: vertical;
 }
 
-#navbar li#jumpToContent {
+#navbar ul li#jumpToContent a {
   position: absolute;
   left: -9999px;
+  text-align: center;
 }
 
-/* #navbar li#jumpToContent a:focus {
+#navbar ul li#jumpToContent a:focus {
   position: static;
   background-color: white;
-} */
+}
